@@ -8,14 +8,15 @@
 
 ## File structure
 
-```
+```text
 thermal-dimorphism-iso7730/
-├── model_constants.py        Reference list of biophysical constants (documentation)
-├── thermal_dimorphism.py     Monte-Carlo simulation module
-├── Validation.py             CBE-II empirical validation module
-├── run_pipeline.py           CLI orchestrator
-├── launch_simulation.command Double-click shortcut (macOS)
-└── output/                   Auto-generated at each run
+├── model_constants.py          Reference list of biophysical constants (documentation)
+├── thermal_dimorphism.py       Monte-Carlo simulation module
+├── Validation.py               CBE-II empirical validation module
+├── run_pipeline.py             CLI orchestrator
+├── launch_simulation.command   Double-click shortcut (macOS)
+├── decompressed_data.csv       [!] CBE-II dataset (user-downloaded, ignored by git)
+└── output/                     Auto-generated at each run
     ├── thermal_dimorphism.json
     ├── gtb_lookup_operational.csv
     ├── gtb_continuous_curve.csv
@@ -39,6 +40,23 @@ python3 run_pipeline.py --simulate --quick  # quick test N_GEN=20k (~1s)
 Or double-click `launch_simulation.command` from Finder.
 
 ---
+
+### Empirical Data Preparation (Validation)
+
+To run the validation module (`Validation.py` or `run_pipeline.py --validate`), you must first prepare the empirical dataset from the public CBE Thermal Comfort Database II (v2.1.0).
+
+1. **Download:** Acquire the raw database archive (`db_measurements_v2.1.0.csv.gz`) from the official repository: 
+   [CBE ASHRAE Database II (v2.1.0)](https://github.com/CenterForTheBuiltEnvironment/ashrae-db-II/tree/master/v2.1.0)
+2. **Extract & Rename:** Decompress the archive and rename the resulting CSV file to `decompressed_data.csv`. Place this file directly in the root folder of this project (`thermal-dimorphism-iso7730`).
+
+*Terminal method (macOS/Linux):*
+```bash
+# Extract and rename the file into the project directory
+gunzip -c /path/to/downloads/db_measurements_v2.1.0.csv.gz > decompressed_data.csv
+```
+
+---
+
 
 ## Module descriptions
 
