@@ -1,0 +1,7 @@
+parameter,label,base,sigma,deriv,contrib_abs,contrib_pct_variance
+s_F,s female [kcal/d] — Frankenfield 2005,-161.0,15.0,-0.006721,0.1008,43.4
+s_M,s male [kcal/d] — Frankenfield 2005,5.0,15.0,0.004761,0.0714,21.8
+clo_s1,"Clo S1 [±10 %, ISO 9920]",0.7,0.07,0.75122,0.0526,11.8
+tskin_f,"T_skin,n F [SE ±0.05°C]",33.2,0.05,0.984634,0.0492,10.3
+tskin_m,"T_skin,n M [SE ±0.05°C]",33.5,0.05,-0.98268,0.0491,10.3
+h_eff,"h_eff [±5 %, ISO 7730]",10.105,0.5052500000000001,-0.047493,0.024,2.5

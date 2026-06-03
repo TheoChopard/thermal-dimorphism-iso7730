@@ -1,0 +1,144 @@
+{
+    "metadata": {
+        "model": "thermal_dimorphism_v15.0",
+        "timestamp": "2026-06-03T21:00:19.947906",
+        "run_id": "ffac1bdb-cef3-48cf-a92d-ff17469c89a4",
+        "script_sha256": "b3fd0c5e96fad280336547b91c7fc26482bf3c7d70ec2b0eab096e0f01b5b5d1",
+        "N_GEN": 200000,
+        "seed": 7730,
+        "bmi_source": "NCD-RisC 2016 (Lancet 387:1377)",
+        "bmi_male": 26.5,
+        "bmi_female": 25.5
+    },
+    "seasonal_results": {
+        "Winter": {
+            "t_opt_mean_m": 23.2967,
+            "t_opt_mean_f": 24.6212,
+            "delta_t_opt": 1.3245,
+            "cohens_d": 0.7932,
+            "welch_p": 0.0,
+            "bootstrap_ci": {
+                "mean": 1.3244171294553804,
+                "se": 0.03350092202969254,
+                "ci_lo": 1.2558398114932987,
+                "ci_hi": 1.3902080461969915,
+                "n_boot": 1000,
+                "n_sample": 5000
+            }
+        },
+        "Spring": {
+            "t_opt_mean_m": 23.5422,
+            "t_opt_mean_f": 25.0143,
+            "delta_t_opt": 1.4721,
+            "cohens_d": 0.9013,
+            "welch_p": 0.0,
+            "bootstrap_ci": {
+                "mean": 1.4720078038814421,
+                "se": 0.03277951973005348,
+                "ci_lo": 1.4049122731732322,
+                "ci_hi": 1.5358820448331731,
+                "n_boot": 1000,
+                "n_sample": 5000
+            }
+        },
+        "Summer": {
+            "t_opt_mean_m": 23.9108,
+            "t_opt_mean_f": 25.624,
+            "delta_t_opt": 1.7132,
+            "cohens_d": 1.089,
+            "welch_p": 0.0,
+            "bootstrap_ci": {
+                "mean": 1.7131127480260673,
+                "se": 0.0316278934876618,
+                "ci_lo": 1.6485512941387288,
+                "ci_hi": 1.773703409660452,
+                "n_boot": 1000,
+                "n_sample": 5000
+            }
+        },
+        "Autumn": {
+            "t_opt_mean_m": 23.6036,
+            "t_opt_mean_f": 25.1218,
+            "delta_t_opt": 1.5183,
+            "cohens_d": 0.9352,
+            "welch_p": 0.0,
+            "bootstrap_ci": {
+                "mean": 1.5181524805418118,
+                "se": 0.03258616291724531,
+                "ci_lo": 1.451571637073156,
+                "ci_hi": 1.5814355510138205,
+                "n_boot": 1000,
+                "n_sample": 5000
+            }
+        }
+    },
+    "s1": {
+        "delta_t": 0.6214,
+        "bootstrap_ci": {
+            "mean": 0.6218989549815461,
+            "se": 0.022846973948583132,
+            "ci_lo": 0.5765224456482183,
+            "ci_hi": 0.6653805783976718,
+            "n_boot": 1000,
+            "n_sample": 5000
+        },
+        "bmr_effect": 1.0273,
+        "swan_effect": -0.405,
+        "coupling_residue": -0.00082
+    },
+    "quadrature": {
+        "delta_t_central": 0.6255,
+        "sigma_total": 0.1531,
+        "ic_95_lo": 0.3254,
+        "ic_95_hi": 0.9256,
+        "contributions": {
+            "s_F": {
+                "sigma": 15.0,
+                "deriv": -0.006721,
+                "contrib": -0.1008
+            },
+            "s_M": {
+                "sigma": 15.0,
+                "deriv": 0.004761,
+                "contrib": 0.0714
+            },
+            "clo_s1": {
+                "sigma": 0.07,
+                "deriv": 0.75122,
+                "contrib": 0.0526
+            },
+            "h_eff": {
+                "sigma": 0.5053,
+                "deriv": -0.047493,
+                "contrib": -0.024
+            },
+            "tskin_f": {
+                "sigma": 0.05,
+                "deriv": 0.984634,
+                "contrib": 0.0492
+            },
+            "tskin_m": {
+                "sigma": 0.05,
+                "deriv": -0.98268,
+                "contrib": -0.0491
+            }
+        }
+    },
+    "validation": {
+        "cbe_t_neutral_m": 24.11,
+        "cbe_t_neutral_f": 24.4,
+        "model_annual_m": 23.588,
+        "model_annual_f": 25.095,
+        "error_m": -0.522,
+        "error_f": 0.695,
+        "required_delta_clo": 0.1285,
+        "clo_diagnosis": "STRUCTURAL FAILURE (\u22650.10 clo) \u2014 irreducible bias."
+    },
+    "percentiles_annual_s2": {
+        "P5": 21.47,
+        "P25": 23.05,
+        "P50": 24.27,
+        "P75": 25.62,
+        "P95": 27.42
+    }
+}
